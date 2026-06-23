@@ -1,6 +1,7 @@
 package net.lt8wrage.ragemod;
 
 import net.lt8wrage.ragemod.block.ModBlocks;
+import net.lt8wrage.ragemod.item.ModCreativeModeTabs;
 import net.lt8wrage.ragemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -47,6 +48,8 @@ public class RageMod {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

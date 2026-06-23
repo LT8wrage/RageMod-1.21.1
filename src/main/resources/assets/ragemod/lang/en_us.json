@@ -2,5 +2,6 @@
   "item.ragemod.enderite_scrap": "Enderite scrap",
   "item.ragemod.enderite_ingot": "Enderite ingot",
 
-  "block.ragemod.enderite_debris": "Enderite debris"
+  "block.ragemod.enderite_debris": "Enderite debris",
+  "creativetab.ragemod.enderite": "Enderite"
 }
