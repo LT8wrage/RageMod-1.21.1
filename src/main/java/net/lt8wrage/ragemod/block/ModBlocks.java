@@ -20,6 +20,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ENDERITE_DEBRIS = registerBlock("enderite_debris",() -> new Block(BlockBehaviour.Properties.of()
             .mapColor(MapColor.COLOR_BLUE).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS)));
 
+    public static final DeferredBlock<Block> ENDERITE_BLOCK = registerBlock("enderite_block",() -> new Block(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.COLOR_BLUE).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)));
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
