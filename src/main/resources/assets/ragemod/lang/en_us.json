@@ -1,6 +1,13 @@
 {
   "item.ragemod.enderite_scrap": "Enderite scrap",
   "item.ragemod.enderite_ingot": "Enderite ingot",
+  "item.ragemod.enderite_sword": "Enderite sword",
+  "item.ragemod.enderite_axe": "Enderite axe",
+  "item.ragemod.enderite_pickaxe": "Enderite pickaxe",
+  "item.ragemod.enderite_shovel": "Enderite shovel",
+  "item.ragemod.enderite_hoe": "Enderite hoe",
+  "item.ragemod.carrot_of_doom_and_despair": "The Carrot Of Doom And Despair",
+
 
   "block.ragemod.enderite_debris": "Enderite debris",
   "block.ragemod.enderite_block": "Enderite block",

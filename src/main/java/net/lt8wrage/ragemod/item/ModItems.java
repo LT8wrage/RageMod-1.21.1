@@ -12,6 +12,11 @@ public class ModItems {
     //basic items
     public static final DeferredItem<Item> ENDERITE_SCRAP = ITEMS.register("enderite_scrap", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDERITE_INGOT = ITEMS.register("enderite_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new Item(new Item.Properties()));
+
+    //food
+    public static final DeferredItem<Item> CARROT_OF_DOOM_AND_DESPAIR = ITEMS.register("carrot_of_doom_and_despair", () -> new Item(new Item.Properties()
+            .food(ModFoodProperties.CARROT_OF_DOOM_AND_DESPAIR)));
 
     //tools
     public static final DeferredItem<SwordItem> ENDERITE_SWORD = ITEMS.register("enderite_sword", () -> new SwordItem(ModToolTiers.ENDERITE, new Item.Properties()
