@@ -66,6 +66,7 @@ public class RageMod {
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ENDERITE_DEBRIS);
+            event.accept(ModBlocks.ENDERITE_BLOCK);
         }
     }
 
