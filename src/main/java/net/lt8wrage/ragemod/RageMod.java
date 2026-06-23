@@ -1,5 +1,6 @@
 package net.lt8wrage.ragemod;
 
+import net.lt8wrage.ragemod.block.ModBlocks;
 import net.lt8wrage.ragemod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -48,6 +49,7 @@ public class RageMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -62,7 +64,11 @@ public class RageMod {
             event.accept(ModItems.ENDERITE_SCRAP);
             event.accept(ModItems.ENDERITE_INGOT);
         }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ENDERITE_DEBRIS);
+        }
     }
+
 
 
     @SubscribeEvent
