@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_block"
+    },
+    "@": {
+      "item": "minecraft:emerald_block"
+    },
+    "!": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "!@!",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ragemod:golden_core"
+  }
+}
