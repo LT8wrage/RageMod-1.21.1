@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:netherite_block",
+    "minecraft:respawn_anchor",
+    "minecraft:ancient_debris",
+    "ragemod:enderite_block",
+    "ragemod:enderite_debris"
+  ]
+}
