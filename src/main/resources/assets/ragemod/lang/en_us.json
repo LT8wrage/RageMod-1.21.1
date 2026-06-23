@@ -1,0 +1,13 @@
+{
+  "itemGroup.ragemod": "Example Mod Tab",
+  "block.ragemod.example_block": "Example Block",
+  "item.ragemod.example_item": "Example Item",
+
+  "ragemod.configuration.title": "RageMod Configs",
+  "ragemod.configuration.section.ragemod.common.toml": "RageMod Configs",
+  "ragemod.configuration.section.ragemod.common.toml.title": "RageMod Configs",
+  "ragemod.configuration.items": "Item List",
+  "ragemod.configuration.logDirtBlock": "Log Dirt Block",
+  "ragemod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ragemod.configuration.magicNumber": "Magic Number"
+}
