@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ragemod:item/carrot_of_doom_and_despair"
+  }
+}
