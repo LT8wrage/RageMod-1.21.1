@@ -13,6 +13,7 @@ public class ModItems {
     public static final DeferredItem<Item> ENDERITE_SCRAP = ITEMS.register("enderite_scrap", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDERITE_INGOT = ITEMS.register("enderite_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDERITE_TEMPLATE = ITEMS.register("enderite_template", () -> new Item(new Item.Properties()));
 
     //food
     public static final DeferredItem<Item> CARROT_OF_DOOM_AND_DESPAIR = ITEMS.register("carrot_of_doom_and_despair", () -> new Item(new Item.Properties()

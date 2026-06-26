@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENDERITE_INGOT);
                         output.accept(ModItems.ENDERITE_SCRAP);
                         output.accept(ModItems.GOLDEN_CORE);
+                        output.accept(ModItems.ENDERITE_TEMPLATE);
 
                         //food
                         output.accept(ModItems.CARROT_OF_DOOM_AND_DESPAIR);
@@ -32,6 +33,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENDERITE_AXE);
                         output.accept(ModItems.ENDERITE_SHOVEL);
                         output.accept(ModItems.ENDERITE_HOE);
+
+                        //armor
+                        output.accept(ModItems.ENDERITE_HELMET);
+                        output.accept(ModItems.ENDERITE_CHESTPLATE);
+                        output.accept(ModItems.ENDERITE_LEGGINGS);
+                        output.accept(ModItems.ENDERITE_BOOTS);
 
                         //blocks
                         output.accept(ModBlocks.ENDERITE_BLOCK);

@@ -26,7 +26,9 @@ public class ModBiomeModifiers {
         HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ENDERITE_DEBRIS_KEY)),
         GenerationStep.Decoration.UNDERGROUND_ORES));
 
+
     }
+
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
         return ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ResourceLocation.fromNamespaceAndPath(RageMod.MODID, name));
