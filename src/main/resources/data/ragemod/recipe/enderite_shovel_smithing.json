@@ -4,11 +4,11 @@
     "item": "ragemod:enderite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_boots"
+    "item": "minecraft:netherite_shovel"
   },
   "result": {
     "count": 1,
-    "id": "ragemod:enderite_boots"
+    "id": "ragemod:enderite_shovel"
   },
   "template": {
     "item": "ragemod:enderite_template"
