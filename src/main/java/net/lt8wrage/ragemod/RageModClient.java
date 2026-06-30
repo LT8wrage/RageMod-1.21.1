@@ -1,5 +1,7 @@
 package net.lt8wrage.ragemod;
 
+import net.lt8wrage.ragemod.screen.ModMenuTypes;
+import net.lt8wrage.ragemod.screen.custom.UpgradeModifierScreen;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +9,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -20,6 +23,7 @@ public class RageModClient {
         // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
         // Do not forget to add translations for your config options to the en_us.json file.
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+
     }
 
     @SubscribeEvent
@@ -27,5 +31,10 @@ public class RageModClient {
         // Some client setup code
         RageMod.LOGGER.info("HELLO FROM CLIENT SETUP");
         RageMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+    }
+
+    @SubscribeEvent
+    public static void  registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.UPGRADE_MODIFIER_MENU.get(), UpgradeModifierScreen::new);
     }
 }

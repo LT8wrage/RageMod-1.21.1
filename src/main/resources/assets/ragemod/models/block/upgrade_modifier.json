@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ragemod:block/upgrade_modifier_top",
+    "side": "ragemod:block/upgrade_modifier_side"
+  }
+}

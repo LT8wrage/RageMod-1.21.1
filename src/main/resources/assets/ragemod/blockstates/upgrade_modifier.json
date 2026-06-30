@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ragemod:block/upgrade_modifier"
+    }
+  }
+}

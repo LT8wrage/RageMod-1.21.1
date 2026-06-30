@@ -1,8 +1,10 @@
 package net.lt8wrage.ragemod;
 
 import net.lt8wrage.ragemod.block.ModBlocks;
+import net.lt8wrage.ragemod.block.entity.ModBlockEntities;
 import net.lt8wrage.ragemod.item.ModCreativeModeTabs;
 import net.lt8wrage.ragemod.item.ModItems;
+import net.lt8wrage.ragemod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,6 +37,9 @@ public class RageMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 

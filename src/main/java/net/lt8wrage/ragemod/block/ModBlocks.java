@@ -1,6 +1,7 @@
 package net.lt8wrage.ragemod.block;
 
 import net.lt8wrage.ragemod.RageMod;
+import net.lt8wrage.ragemod.block.custom.UpgradeModifierBlock;
 import net.lt8wrage.ragemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,6 +23,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ENDERITE_BLOCK = registerBlock("enderite_block",() -> new Block(BlockBehaviour.Properties.of()
             .mapColor(MapColor.COLOR_BLUE).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> UPGRADE_MODIFIER = registerBlock("upgrade_modifier",() -> new UpgradeModifierBlock(BlockBehaviour.Properties.of()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

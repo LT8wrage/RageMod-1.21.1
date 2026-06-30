@@ -14,14 +14,15 @@ public class ModItems {
     public static final DeferredItem<Item> ENDERITE_INGOT = ITEMS.register("enderite_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GOLDEN_CORE = ITEMS.register("golden_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDERITE_TEMPLATE = ITEMS.register("enderite_template", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDERITE_PEARL = ITEMS.register("enderite_pearl", () -> new EnderitePearlItem(new Item.Properties()));
 
     //food
     public static final DeferredItem<Item> CARROT_OF_DOOM_AND_DESPAIR = ITEMS.register("carrot_of_doom_and_despair", () -> new Item(new Item.Properties()
             .food(ModFoodProperties.CARROT_OF_DOOM_AND_DESPAIR)));
 
     //tools
-    public static final DeferredItem<SwordItem> ENDERITE_SWORD = ITEMS.register("enderite_sword", () -> new SwordItem(ModToolTiers.ENDERITE, new Item.Properties()
-            .attributes(SwordItem.createAttributes(ModToolTiers.ENDERITE, 5,-2.4f))));
+    public static final DeferredItem<EnderiteSwordItem> ENDERITE_SWORD = ITEMS.register("enderite_sword", () -> new EnderiteSwordItem(ModToolTiers.ENDERITE, new Item.Properties()
+            .attributes(SwordItem.createAttributes(ModToolTiers.ENDERITE, 5, -2.4f))));
     public static final DeferredItem<PickaxeItem> ENDERITE_PICKAXE = ITEMS.register("enderite_pickaxe", () -> new PickaxeItem(ModToolTiers.ENDERITE, new Item.Properties()
             .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDERITE, 1.0f,-2.8f))));
     public static final DeferredItem<ShovelItem> ENDERITE_SHOVEL = ITEMS.register("enderite_shovel", () -> new ShovelItem(ModToolTiers.ENDERITE, new Item.Properties()
